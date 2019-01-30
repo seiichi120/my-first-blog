@@ -1,0 +1,44 @@
+#body{
+  background-color: #f0f8ff;
+}
+
+#head h1{
+  text-align:center;
+}
+
+#head img{
+  width: 20%;
+}
+
+#nav{
+  background-color: #2222;
+}
+
+#nav ul{
+  font-size: 0px;
+}
+
+#nav ul li{
+  display: inline-block;
+  font-size: 10px;
+  width: 16.6%;
+}
+
+#itemlist {
+  list-style: none;
+  display: flex;
+}
+
+.item{
+  width: 100%;
+}
+
+.pagination{
+  list-style: none;
+  text-align:center;
+}
+
+.page{
+  display: inline;
+  background-color: #2222;
+}
