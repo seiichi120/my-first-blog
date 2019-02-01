@@ -1,13 +1,13 @@
+{% load static %}
+<head>
+  <link rel="stylesheet" media="all" href="{% static 'css/style.css' %}">
+</head>
 
-
-{% block body %}
-    <form action="" method="get">
-        <label>名前:<input type="text" size="20" name="your_name"></label>
-        <label>アドレス:<input type="text" size="30" name="address"></label>
-        <input type="submit" value="送信">
-    </form>
-    {% if your_name %}
-        {{ your_name }}さん、こんにちは。<br />
-        {{ address }}にメールを送信しました。
-    {% endif %}
-{% endblock %}
+  <div style="position:relative; top:-10px; left:50px;">
+    <p><font size="7">商品ページ</font></P>
+    <img id="mainImg" style="float:left" src="{% static 'images/photo01.jpg' %}" width="360" height="350" alt="">
+    <p>商品の説明をのせたい。商品の説明をのせたい。商品の説明をのせたい。商品の説明をのせたい。商品の説明をのせたい。商品の説明をのせたい。商品の説明をのせたい。</p>
+  </div>
+  <form style="clear:both" action="pay">
+    <input type="submit" value="注文する">
+  </form>

@@ -1,0 +1,12 @@
+{% block body %}
+<form style="clear:both" action="" method="get">
+    <label>名前:<input type="text" size="20" name="your_name"></label><br/>
+    <label>アドレス:<input type="text" size="30" name="address"></label><br/>
+    <label>住所:<input type="text" size="30" name="address"></label><br/>
+    <input type="submit" value="送信">
+</form>
+{% if your_name %}
+    {{ your_name }}さん、こんにちは。<br/>
+    {{ address }}にメールを送信しました。
+{% endif %}
+{% endblock %}

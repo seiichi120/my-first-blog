@@ -4,5 +4,7 @@ from . import views
 
 urlpatterns = [
     path('', views.post_list, name='post_list'),
-    url(r'^form/$', views.form, name='form'), # 追加する
+    path('form/', views.form, name='form'),
+    path('index/', views.index, name='index'),
+    path('pay/', views.pay, name='pay'),
 ]
